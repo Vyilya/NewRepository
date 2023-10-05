@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Профиль</h1>
+    {{ user_profile.first_name }}
+    {{ user_profile.last_name }}
+    {{ user_profile.age }}
+    {{ user_profile.about_me }}
+
+    <a href="{% url 'profileup' %}">Редактировать профиль</a>
+{% endblock %}

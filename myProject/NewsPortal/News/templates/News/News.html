@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-Прив
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+    <main>
+
+        <div class="wrapper">
+            <h1 class="title title--h1">News</h1>
+
+
+
+    {% for article in articles %}
+
+    <div class="card">
+        <div class="col-l">
+            <img class="card__img" src="{{ article.image.url }}" alt="">
+        </div>
+        <div class="col-r">
+            <a class="title card__title" href="{% url 'detail' article.id %}">{{ article.title }}</a>
+            <p class="card__date">{{ article.date }}</p>
+            <p class="card__desc">{{ article.desc|truncatechars:250 }}</p>
+        </div>
+    </div>
+    {% endfor %}
+        </div>
+    </main>
+{% endblock %}

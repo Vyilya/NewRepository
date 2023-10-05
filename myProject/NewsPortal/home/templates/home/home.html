@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+
+        <section class="hero">
+            <div class="wrapper hero-wrapper">
+            <img src="" alt="" class="my_image hero__my_image">
+            <span class="first_name">Имя: {{user.username}}</span>
+            <span class="last_name">Фамилия:Текст Рыба</span>
+            <span class="my_age">Дата рождения: 19.11.1989 (33)</span>
+            <p class="my_desc">О себе: </p>
+            <p class="my_desc">О себе: </p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="wrapper hero-wrapper">
+            <h2>Регистрация нового пользователя</h2>
+            <a href="#" class="sign_link">Регистрация</a>
+            </div>
+        </section>
+    </main>
+{% endblock %}

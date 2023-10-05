@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #000000;
+}
+
+.header-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+nav > .link {
+    margin: 0 20px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.header-right > .link {
+    margin-left: 40px;
+}
+
+.header-right > .link:hover {
+    color: #ff8400;
+}
+
+.link-primary {
+    color: #ff8400;
+}
+
+.link:hover {
+    color: #ff8400;
+}
+
+.link.link-primary:hover {
+    color: #fff;
+}
+
+.hero {
+    background-color: #fff;
+    height: calc(100vh - 80px);
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_image {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    background: #000000;
+    object-fit: cover;
+
+}
+
+.first_name, .last_name, .my_desc {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+.my_desc{
+    font-weight: normal;
+    text-transform: lowercase;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin: 5px 0 0;
+}
+.my_age {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #707070;
+
+}
+
+.hero__my_image {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,16 @@
+<{% extends 'base.html' %}
+{% block content %}
+
+
+<section>
+    <div class="wrapper">
+        <form action="{% url 'reguser' %}" method="POST">
+            {% csrf_token %}
+            {{ formuser }}
+            <button type="submit">Регистрация</button>
+            <p>{{ error }}</p>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
