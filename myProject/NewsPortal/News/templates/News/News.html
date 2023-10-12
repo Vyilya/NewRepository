@@ -18,6 +18,7 @@
             <a class="title card__title" href="{% url 'detail' article.id %}">{{ article.title }}</a>
             <p class="card__date">{{ article.date }}</p>
             <p class="card__desc">{{ article.desc|truncatechars:250 }}</p>
+            <p class="card__category">{{ article.category }}</p>
         </div>
     </div>
     {% endfor %}

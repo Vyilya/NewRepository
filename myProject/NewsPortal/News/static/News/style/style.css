@@ -79,3 +79,7 @@ body {
     letter-spacing: 0;
     color: #000;
 }
+.card__category {
+    font-size: 30px;
+    text-decoration: none;
+}

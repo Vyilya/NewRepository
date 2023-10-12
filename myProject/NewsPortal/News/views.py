@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from .models import Article # подключение базы данных
+from .models import Article, Category # подключение базы данных
 app_name = 'News'
 def NewsView(request):
     articles = Article.objects.all() # отвечает за хранение подключенной базы
