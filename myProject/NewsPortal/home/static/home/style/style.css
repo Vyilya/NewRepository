@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    background: #000000;
+    background: #abc4c5;
 }
 
 .header-wrapper {
@@ -21,7 +21,7 @@ body {
 }
 
 .link {
-    color: #fff;
+    color: #000;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ nav > .link {
 }
 
 .hero {
-    background-color: #fff;
+    background-color: #42aaff;
     height: calc(100vh - 80px);
     padding-top: 5vh;
     padding-bottom: 2vh;
@@ -76,7 +76,7 @@ nav > .link {
 .my_image {
     width: 320px;
     height: 320px;
-    border-radius: 100%;
+    border-radius: 0px;
     background: #000000;
     object-fit: cover;
 
@@ -94,7 +94,7 @@ nav > .link {
 .my_desc{
     font-weight: normal;
     text-transform: lowercase;
-    width: 90%;
+    width: 80%;
     max-width: 700px;
     text-align: center;
     margin: 5px 0 0;
@@ -107,5 +107,5 @@ nav > .link {
 }
 
 .hero__my_image {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }

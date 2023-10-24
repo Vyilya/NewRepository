@@ -4,6 +4,8 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField('Название категории', max_length=50)
+    def __str__(self):
+        return f"{self.name} "
 class Article(models.Model):
     title = models.CharField('Заголовок', max_length=50)
     desc = models.TextField('Описание')
@@ -14,3 +16,4 @@ class Article(models.Model):
 
     def __str__(self):
         return f"{self.title} | {self.date} "
+
